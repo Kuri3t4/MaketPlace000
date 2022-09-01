@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    height: 160vh;
+    background-color: rgb(231, 154, 102);
+    overflow-x: hidden;
+}
+/* Barra superior */
+@keyframes virdelado {
+    from {
+        transform: translate(150vw, 0%);
+    }
+    to {
+        transform: translate(0vw, 0%);
+    }
+}
+.upbar {
+    display: flex;
+    background: black;
+    border-bottom: 3px solid white;
+    animation: virdelado 2.1s normal both 500ms;
+}
+.bar {
+    background: black;
+    display: flex;
+    padding: 10px;
+    transform: translate(62.6vw);
+}
+.barcomp {
+    padding: 0px 15px;
+    color: white;
+}
+.barcomp2 {
+    background: black;
+    padding: 0px 10px;
+}
+.link {
+    color: white;
+}
+.link2 {
+    color: black;
+    position: absolute;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    transform: translate(0vw, -.8vh);
+}
+#link2 {
+    width: 4.5vw;
+    transform: translate(3vw, -.8vh);
+}
+@keyframes piscar {
+    0% {
+        color: black;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}
+.mark {
+    position: absolute;
+    color: white;
+    margin-left: .7vw;
+    font-size: 2.3vw;
+    animation: piscar 1.5s infinite normal both;
+}
+/* Barra superior */
+
+/* Intro e apresentação */
+/* .upcontainer {
+    border-bottom: 2px solid black;
+} */
+@keyframes texto {
+    from {
+        width: .1vw;
+    }
+    to {
+        width: 51.2vw;
+    }
+}
+.apresentaçao {
+    position: absolute;
+    background: transparent;
+    box-shadow: .5px .5px 10px .5px #252525;
+    border-left: black solid 4px;
+    border-bottom: black solid 3.5px;
+    width: 46vw;
+    height: 10vh;
+    margin-left: 1vw;
+    transform: translate(0%, 39.5vh);
+    animation: texto 4s normal both 500ms;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2vw;
+    padding-left: .3vw;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+@keyframes piscando {
+    0% {
+        border: black solid 10px;
+        border-style: double;
+    }
+    20% {
+        border-top: blue solid 10px;
+        border-style: double;
+    }
+    40% {
+        border-top: black solid 10px;
+        border-style: double;
+        border-right: blue solid 10px;
+        border-style: double;
+    }
+    60% {
+        border-right: black solid 10px;
+        border-style: double;
+        border-bottom: blue solid 10px;
+        border-style: double;
+    }
+    80% {
+        border-bottom: black solid 10px;
+        border-style: double;
+        border-left: blue solid 10px;
+        border-style: double;
+    }
+    100% {
+        border-left: black solid 10px;
+        border-style: double;
+    }
+}
+.gif1 {
+    height: 60vh;
+    transform: translate(61vw, 18.5vh);
+    border: black solid 10px;
+    border-style: double;
+    animation: aparecer 5s normal both 500ms, piscando .4s 500ms both infinite normal;
+}
+/* Fim da intro e apresentação */
+
+/* Cards */
+.downcontainer {
+    border-top: 3px solid black;
+    transform: translate(0%, 34vh);
+}
+.card1 {
+    background: transparent;
+    box-shadow: 5px 5px 5px #252525;
+    width: 20vw;
+    height: 50vh;
+    transform: translate(39vw, 2vh);
+}
+.img1 {
+    height: 30vh;
+    transform: translate(2.8vw);
+}
+.filt1 {
+    transform: translate(0vw, 2vh);
+}
+#produto1 {
+    transform: translate(7.4vw);
+}
+#preço1 {
+    transform: translate(5.5vw, 1vh);
+}
+.btn1 {
+    transform: translate(6.1vw, 3.5vh);
+    background: rgb(103, 218, 103);
+    padding: 10px;
+    width: 8vw;
+    height: 5.5vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn1:active {
+    width: 7.7vw;
+    height: 5.3vh;
+    box-shadow: inset -3px -3px 3px #252525;
+    font-size: 12px;
+}
+/* Barra inferior */
+.downbar {
+    display: flex;
+    background: black;
+    transform: translate(0vw, 50vh);
+    height: 5vh;
+    border-top: white solid 2px;
+}
+.bar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(74vw, 0vh);
+}
+.tm {
+    color: white;
+    position: absolute;
+    transform: translate(-78.3vw, 0vh);
+}
